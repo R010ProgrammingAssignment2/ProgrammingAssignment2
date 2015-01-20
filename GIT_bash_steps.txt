@@ -1,0 +1,55 @@
+After installed the github,
+go to the this path---> https://help.github.com/articles/set-up-git
+
+--
+$ git config --global user.name "mani4malar"
+
+
+$ git config --global user.email "mani4malar@gmail.com"
+
+
+--
+cd C:\GIT
+
+then create repostry
+
+git clone "take link from repostry"
+----
+
+to view the list file in repositry
+
+cd ProgrammingAssignment2
+ls
+
+----
+to read the file use this command
+vim README.md
+
+after edited the file content in git , enter ":x" to save and get out from the editor.
+----
+
+to know the commited file status use the below command
+
+git status (using this command we can see the modified file list)
+
+to commit file,
+1st need to add it.($ git add <filename> <file name 2>)
+
+then use 
+git commit -m "bla bla"
+
+see the file or commited or not using  $ git log.
+
+
+-----
+Above commands are commiting the file in local.
+
+using git status we can see , is it any commited file in local need to push to the server.
+
+$ git remote add origin https://github.com/mani4malar/ProgrammingAssignment2
+---
+
+git push -u origin master
+
+-----
+
