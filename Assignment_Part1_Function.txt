@@ -1,0 +1,16 @@
+pollutantmean1<-function(directory,pollutant,id)
+{
+files_list <- list.files(directory, full.names=TRUE)  #creates a list of files
+
+dat <- data.frame()   # Creating empty data frame to store all the file value under single data frame
+
+for(i in id)
+{
+dat<-rbind(dat,read.csv(files_list[i]))
+}
+
+mean(dat[, pollutant], na.rm=TRUE)
+
+}
+
+                         
