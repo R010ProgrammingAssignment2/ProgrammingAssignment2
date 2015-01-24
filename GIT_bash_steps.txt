@@ -48,8 +48,9 @@ using git status we can see , is it any commited file in local need to push to t
 
 $ git remote add origin https://github.com/mani4malar/ProgrammingAssignment2
 ---
-
+local-- server
 git push -u origin master
 
 -----
-
+server to local
+git pull -u origin master
